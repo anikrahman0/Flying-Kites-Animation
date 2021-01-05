@@ -29,15 +29,10 @@ if(isset($_SESSION['login_user'])){
 <html lang="en">
 <head>
 
-<link rel="icon" href="logo and icons/favicon.ico">
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  <title>Flying Kites</title>
 <style type="text/css">
 
-input[type=search]{
+#top input[type=search]{
   padding-left:4px;
   width:300px; 
   font-family: Abel, sans-serif;
@@ -111,7 +106,7 @@ a{
  
 <li class="nav-item ">
    <form action="search.php" method="get" class="form-inline my-2 my-lg-0">
-      <input  value="<?php echo isset($_GET['query']) ? $_GET['query'] : ''; ?>" name="query" type="search" placeholder="Search videos" aria-label="Search">
+      <input class="form-control"  value="<?php echo isset($_GET['query']) ? $_GET['query'] : ''; ?>" name="query" type="search" placeholder="Search videos" aria-label="Search">
       <button id="search" class="btn" type="submit"><i class="fas fa-search"></i></button>
     </form>
 </li>	
@@ -129,8 +124,8 @@ else{
    echo'<div class="dropdown">
   <button class="dropbtn">'.$user.'</button>
   <div class="dropdown-content">
-    <a href="my dashboard.php"><i class="fas fa-tachometer-alt"></i> My Dashboard</a>
-    <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    <a href="my dashboard.php"><i class="fas fa-video"></i> &nbsp;My Videos</a>
+    <a href="logout.php"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</a>
     
   </div>
 </div>';

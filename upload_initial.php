@@ -110,7 +110,7 @@ session_start();
 <body style="background-color: #271820;">
   
 
-    <div style="margin-top:70px;" class=" d-flex justify-content-center" >
+    <div class=" d-flex justify-content-center m-4" >
     <div class="col-md-10">
         <div class="card">
             <div  class="card-header">
@@ -137,17 +137,14 @@ session_start();
      
      <script>
 
-     
+
+
      Dropzone.options.dzone = {
-        paramName: 'file',
+        paramName: "file",
         acceptedFiles: "video/mp4",
         maxFilesize: 1024,
         maxFiles:1,
-        setTimeout(function () {
-    window.location.href = 'http://test.html';
-}, 1000);
-      
-       }
+  },
      </script>
     <script src="upload_assets/js/jquery.min.js"></script>
     <script src="upload_assets/bootstrap/js/bootstrap.min.js"></script>
